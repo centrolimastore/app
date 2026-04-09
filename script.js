@@ -1,48 +1,33 @@
-let productos = [
+let tiendas = [
   {
-    nombre: "Polo Negro",
-    precio: 25,
-    categoria: "ropa",
-    ubicacion: "Gamarra",
-    proveedor: "Gamarra Store",
-    imagen: "https://picsum.photos/400/400?1",
-    etiqueta: "Polo Negro"
-  },
-  {
-    nombre: "Gorra Urbana",
-    precio: 18,
-    categoria: "gorras",
-    ubicacion: "Gamarra",
-    proveedor: "Gamarra Caps",
-    imagen: "https://picsum.photos/400/400?2",
-    etiqueta: "Gorra Urbana"
-  },
-  {
-    nombre: "Pantalón Jeans",
-    precio: 60,
-    categoria: "pantalones",
-    ubicacion: "Gamarra",
-    proveedor: "Jeans Perú",
-    imagen: "https://picsum.photos/400/400?3",
-    etiqueta: "Jean"
-  },
-  {
-    nombre: "Audífonos Bluetooth",
-    precio: 45,
+    nombre: "ISUTECH",
+    ubicacion: "Centro de Lima",
     categoria: "audifonos",
-    ubicacion: "Centro de Lima",
-    proveedor: "Tech Centro",
-    imagen: "https://picsum.photos/400/400?4",
-    etiqueta: "Audífonos"
+    imagen: "https://lh3.googleusercontent.com/d/1fjFzOJZb8e_4C78ntaGXt6fGAUdoCEtU"
   },
   {
-    nombre: "Cargador iPhone",
-    precio: 20,
+    nombre: "IMPORTACIONES LIMIG",
+    ubicacion: "Gamarra",
     categoria: "cargadores",
+    imagen: "https://lh3.googleusercontent.com/d/149l7__xK83Qe-fn3Qanh-feI8rFyq2iu"
+  },
+  {
+    nombre: "IMPORTACIONES ENRIQUEZ",
     ubicacion: "Centro de Lima",
-    proveedor: "Electro Lima",
-    imagen: "https://picsum.photos/400/400?5",
-    etiqueta: "Cargador Iphone"
+    categoria: "parlantes",
+    imagen: "https://lh3.googleusercontent.com/d/1cOQyjGACuericmtVY-msKImlNruSiiHv"
+  },
+  {
+    nombre: "Importaciones JL",
+    ubicacion: "Gamarra",
+    categoria: "audifonos",
+    imagen: "https://picsum.photos/400/400?13"
+  },
+  {
+    nombre: "ElectroCentro",
+    ubicacion: "Centro de Lima",
+    categoria: "cargadores",
+    imagen: "https://picsum.photos/400/400?14"
   }
 ];
 
@@ -52,37 +37,29 @@ const catalogo = document.getElementById("catalogo");
 const buscador = document.getElementById("buscador");
 const filtroUbicacion = document.getElementById("filtroUbicacion");
 
-function mostrarProductos() {
+function mostrarTiendas() {
   catalogo.innerHTML = "";
 
-  let filtrados = productos.filter(p => {
+  let filtrados = tiendas.filter(t => {
     return (
-      p.nombre.toLowerCase().includes(buscador.value.toLowerCase()) &&
-      (filtroUbicacion.value === "todos" || p.ubicacion === filtroUbicacion.value) &&
-      (filtroCategoria === "todas" || p.categoria === filtroCategoria)
+      t.nombre.toLowerCase().includes(buscador.value.toLowerCase()) &&
+      (filtroUbicacion.value === "todos" || t.ubicacion === filtroUbicacion.value) &&
+      (filtroCategoria === "todas" || t.categoria === filtroCategoria)
     );
   });
 
-  filtrados.forEach(p => {
-    let mensaje = `¡Hola!, quiero el ${p.nombre} de S/ ${p.precio}`;
-    let link = `https://wa.me/51947200144?text=${encodeURIComponent(mensaje)}`;
-
+  filtrados.forEach(t => {
     let div = document.createElement("div");
     div.classList.add("producto");
 
     div.innerHTML = `
-      <span class="etiqueta">${p.etiqueta}</span>
-      <img src="${p.imagen}">
-      <h3>${p.nombre}</h3>
-      <p>S/ ${p.precio}</p>
-      <a class="btn" href="${link}" target="_blank">Comprar</a>
+      <img src="${t.imagen}">
+      <h3>${t.nombre}</h3>
+      <p>${t.ubicacion}</p>
+      <div class="btn">Ver catálogo</div>
     `;
 
-    div.addEventListener("click", (e) => {
-      if (!e.target.classList.contains("btn")) {
-        verDetalle(p);
-      }
-    });
+    div.onclick = () => abrirTienda(t);
 
     catalogo.appendChild(div);
   });
@@ -90,31 +67,60 @@ function mostrarProductos() {
 
 function filtrarCategoria(cat) {
   filtroCategoria = cat;
-  mostrarProductos();
+  mostrarTiendas();
 }
 
-buscador.addEventListener("input", mostrarProductos);
-filtroUbicacion.addEventListener("change", mostrarProductos);
+buscador.addEventListener("input", mostrarTiendas);
+filtroUbicacion.addEventListener("change", mostrarTiendas);
 
-function verDetalle(p) {
-  let mensaje = `Hola, quiero el ${p.nombre} de S/ ${p.precio}`;
+function abrirTienda(tienda) {
+  let nuevaVentana = window.open("", "_blank");
+
+  nuevaVentana.document.write(`
+    <html>
+    <head>
+      <title>${tienda.nombre}</title>
+      <style>
+        body { font-family: Arial; margin:0; background:#f0f2f5;}
+        .header { background:#ff8c00; color:white; padding:20px; text-align:center;}
+        .catalogo { display:flex; overflow-x:auto; gap:20px; padding:20px;}
+        .item { min-width:250px; background:white; padding:10px; border-radius:10px;}
+        img { width:100%; height:150px; object-fit:cover;}
+        .btn { background:green; color:white; padding:10px; text-align:center; border-radius:8px; margin-top:10px;}
+      </style>
+    </head>
+    <body>
+
+    <div class="header">
+      <h2>${tienda.nombre}</h2>
+      <p>${tienda.ubicacion}</p>
+    </div>
+
+    <div class="catalogo">
+      ${crearProducto("Audífonos")}
+      ${crearProducto("Cargadores")}
+      ${crearProducto("Parlantes")}
+    </div>
+
+    </body>
+    </html>
+  `);
+}
+
+function crearProducto(nombre) {
+  let mensaje = `Hola, quiero comprar ${nombre}`;
   let link = `https://wa.me/51947200144?text=${encodeURIComponent(mensaje)}`;
 
-  document.getElementById("detalleProducto").innerHTML = `
-    <img src="${p.imagen}" style="width:100%; border-radius:10px;">
-    <h2>${p.nombre}</h2>
-    <p><strong>Precio:</strong> S/ ${p.precio}</p>
-    <p><strong>Proveedor:</strong> ${p.proveedor}</p>
-    <p><strong>Ubicación:</strong> ${p.ubicacion}</p>
-    <a class="btn" href="${link}" target="_blank">Comprar por WhatsApp</a>
-    <br><br>
+  return `
+    <div class="item">
+      <img src="https://picsum.photos/300/300?random=${Math.random()}">
+      <h3>${nombre}</h3>
+      <p>Medidas: estándar</p>
+      <p>Precio: S/ 50</p>
+      <p>Ubicación: Gamarra</p>
+      <a class="btn" href="${link}" target="_blank">Solicitar compra</a>
+    </div>
   `;
-
-  document.getElementById("modal").style.display = "block";
 }
 
-function cerrarModal() {
-  document.getElementById("modal").style.display = "none";
-}
-
-mostrarProductos();
+mostrarTiendas();
