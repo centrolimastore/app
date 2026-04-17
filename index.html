@@ -5,46 +5,57 @@
   <title>Centro de Lima Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="hero">
+  <header class="hero">
 
-  <div class="logo">
-    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
-    <span>CLS</span>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
+      <span>CLS</span>
+    </div>
+
+    <h1 class="titulo">CENTRO DE LIMA STORE</h1>
+    <p>Compra directo de Gamarra, sin perder tiempo.</p>
+
+    <div class="busqueda">
+      <input type="text" id="buscador" placeholder="Buscar galerías...">
+
+      <select id="filtroUbicacion">
+        <option value="todos">Todas</option>
+        <option value="Gamarra">Gamarra</option>
+        <option value="Centro de Lima">Centro de Lima</option>
+      </select>
+    </div>
+
+  </header>
+
+  <div class="contenedor">
+
+    <aside class="categorias">
+      <h3>Categorías</h3>
+      <ul>
+        <li onclick="filtrarCategoria('Todas')">Todas</li>
+        <li onclick="filtrarCategoria('Audifonos')">Audífonos</li>
+        <li onclick="filtrarCategoria('Cargador')">Cargadores</li>
+        <li onclick="filtrarCategoria('Pilas')">Pilas</li>
+        <li onclick="filtrarCategoria('Memoria RAM')">Memorias RAM</li>
+        <li onclick="filtrarCategoria('Polos')">Polos</li>
+        <li onclick="filtrarCategoria('Pantalones')">Pantalones</li>
+        <li onclick="filtrarCategoria('Vasos')">Vasos</li>
+        <li onclick="filtrarCategoria('Platos')">Platos</li>
+        <li onclick="filtrarCategoria('Iphone')">iPhone</li>
+        <li onclick="filtrarCategoria('Samsung')">Samsung</li>
+      </ul>
+    </aside>
+
+    <main class="productos">
+      <div id="catalogo"></div>
+    </main>
+
   </div>
 
-  <h1 class="titulo">CENTRO DE LIMA STORE</h1>
-  <p>Compra directo de Gamarra, sin perder tiempo.</p>
+  <script src="script.js"></script>
 
-  <div class="busqueda">
-    <input type="text" id="buscador" placeholder="Buscar tiendas...">
-    <select id="filtroUbicacion">
-      <option value="todos">Todas</option>
-      <option value="Gamarra">Gamarra</option>
-      <option value="Centro de Lima">Centro de Lima</option>
-    </select>
-  </div>
-</header>
-
-<div class="contenedor">
-
-  <aside class="categorias">
-    <h3>Categorías</h3>
-    <ul>
-      <li onclick="filtrarCategoria('todas')">Todas</li>
-      <li onclick="filtrarCategoria('audifonos')">Audífonos</li>
-      <li onclick="filtrarCategoria('cargadores')">Cargadores</li>
-      <li onclick="filtrarCategoria('parlantes')">Parlantes</li>
-    </ul>
-  </aside>
-
-  <main class="productos">
-    <div id="catalogo"></div>
-  </main>
-
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
