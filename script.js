@@ -149,6 +149,22 @@ let galerias = [
           { nombre: "Cargador Solo 6.5A", precio: 9, imagen: "DM/cargadorsolo6.5a.jpg" },
           { nombre: "Altavoz Bluethooth", precio: 85, imagen: "DM/altavozblutu.jpg" },
           { nombre: "Audífonos Inalámbricos", precio: 20, imagen: "DM/audifonosinalambricosdm.jpg" }
+	]
+      }
+    ]
+  },
+  {
+    nombre: "Galería Gran Mesa",
+    direccion: "Jirón Andahuaylas N. 1049",
+    imagen: "Galeria/lagranmesa.jpg",
+    tiendas: [
+      {
+        nombre: "LANDES",
+        ubicacion: "Gamarra",
+        imagen: "https://lh3.googleusercontent.com/d/1G_4xEseHebUT1TZuV92pkS1o4U-Ro6uU",
+        productos: [
+          { nombre: "Maleta Rosada", precio: 50 },
+          { nombre: "Maleta Hello Kity", precio: 50 }
         ]
       }
     ]
