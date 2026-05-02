@@ -151,7 +151,6 @@ let galerias = [
           { nombre: "Audífonos BoroFone ES68", precio: 38, imagen: "SUMAQ/wos.jpg" },
 	  { nombre: "AceFast 160 horas", precio: 50, imagen: "SUMAQ/papo.jpg" },
           { nombre: "Vincha REDD 3059BT", precio: 23, imagen: "SUMAQ/dtoke.jpg" },
-	  { nombre: "Vincha REDD 3055TB", precio: 28, imagen: "SUMAQ/force.jpg" },
           { nombre: "Audífono MoviSun + Funda", precio: 14, imagen: "SUMAQ/katacrist.jpg" }
         ]
       },
