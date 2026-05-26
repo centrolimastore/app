@@ -42,6 +42,15 @@ let galerias = [
     imagen: "Galeria/cesar.jpg",
     tiendas: [
       {
+	    nombre: "ECO Tecnología",
+        ubicacion: "Centro de Lima",
+        imagen: "Logos/ECOTECNOLOGIA.jpeg",
+        productos: [
+          { nombre: "Cargador", precio: 25 },
+          { nombre: "Audífonos", precio: 60 }
+        ]
+      },
+      {
         nombre: "IMPORTACIONES ENRIQUEZ",
         ubicacion: "Centro de Lima",
         imagen: "https://lh3.googleusercontent.com/d/1cOQyjGACuericmtVY-msKImlNruSiiHv",
