@@ -12,7 +12,7 @@ let galerias = [
         imagen: "https://lh3.googleusercontent.com/d/1fjFzOJZb8e_4C78ntaGXt6fGAUdoCEtU",
         productos: [
           { nombre: "Cargador", precio: 25 },
-          { nombre: "Audífonos", precio: 60 }
+          { nombre: "Audífonos", precio: 65 }
         ]
       },
       {
