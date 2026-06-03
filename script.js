@@ -46,7 +46,7 @@ let galerias = [
         ubicacion: "Centro de Lima",
         imagen: "Logos/ECOTECNOLOGIA.jpeg",
         productos: [
-          { nombre: "Cargador", precio: 25 },
+          { nombre: "Cargador", precio: 30 },
           { nombre: "Audífonos", precio: 60 }
         ]
       },
