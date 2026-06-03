@@ -279,7 +279,7 @@ let galerias = [
         ubicacion: "Centro de Lima",
         imagen: "Galeria/FOX.jpg",
         productos: [
-          { nombre: "Cubo 20W Iphone Entrada C", precio: 25, imagen: "FOX/cubofox.jpg" },
+          { nombre: "Cubo 20W Iphone Entrada C", precio: 25, imagen: "cubofox.jpg" },
           { nombre: "Cubo 25W Iphone Entrada C", precio: 25, imagen: "FOX/cubo25.jpg" },
 	  { nombre: "Cubo 40W Iphone Entrada C", precio: 25, imagen: "FOX/cubito.jpg" },
           { nombre: "Cable para Iphone Trenzado C a C", precio: 25, imagen: "FOX/dafneverdi.jpg" },
