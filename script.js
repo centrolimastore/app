@@ -12,7 +12,7 @@ let galerias = [
         imagen: "https://lh3.googleusercontent.com/d/1fjFzOJZb8e_4C78ntaGXt6fGAUdoCEtU",
         productos: [
           { nombre: "Cargador", precio: 25 },
-          { nombre: "Audífonos", precio: 65 }
+          { nombre: "Audífonos", precio: 60 }
         ]
       },
       {
@@ -46,7 +46,7 @@ let galerias = [
         ubicacion: "Centro de Lima",
         imagen: "Logos/ECOTECNOLOGIA.jpeg",
         productos: [
-          { nombre: "Cargador", precio: 30 },
+          { nombre: "Cargador", precio: 25 },
           { nombre: "Audífonos", precio: 60 }
         ]
       },
@@ -279,7 +279,7 @@ let galerias = [
         ubicacion: "Centro de Lima",
         imagen: "Galeria/FOX.jpg",
         productos: [
-          { nombre: "Cubo 20W Iphone Entrada C", precio: 25, imagen: "cubofox.jpg" },
+          { nombre: "Cubo 20W Iphone Entrada C", precio: 25, imagen: "FOX/cubofox.jpg" },
           { nombre: "Cubo 25W Iphone Entrada C", precio: 25, imagen: "FOX/cubo25.jpg" },
 	  { nombre: "Cubo 40W Iphone Entrada C", precio: 25, imagen: "FOX/cubito.jpg" },
           { nombre: "Cable para Iphone Trenzado C a C", precio: 25, imagen: "FOX/dafneverdi.jpg" },
@@ -632,37 +632,81 @@ function filtrarCategoria(cat) {
 }
 
 function mostrarTiendasFiltradas() {
+
   catalogo.innerHTML = "";
+
   crearVolver(mostrarGalerias);
 
   galerias.forEach(galeria => {
+
     galeria.tiendas
+
       .filter(t =>
         filtroUbicacion.value === "todos" ||
         t.ubicacion === filtroUbicacion.value
       )
-      .filter(t => {
-        if (filtroCategoria === "Todas") return true;
 
-        return t.productos.some(p =>
-          p.nombre.toLowerCase().includes(filtroCategoria.toLowerCase())
-        );
-      })
       .forEach(tienda => {
-        let div = document.createElement("div");
-        div.className = "producto";
 
-        div.innerHTML = `
-          <img src="${tienda.imagen}">
-          <h3>${tienda.nombre}</h3>
-          <p>${tienda.ubicacion}</p>
-          <div class="btn">Ver productos</div>
-        `;
+        tienda.productos
 
-        div.onclick = () => mostrarProductos(tienda, galeria);
-        catalogo.appendChild(div);
+          .filter(producto => {
+
+            if (filtroCategoria === "Todas") return true;
+
+            return producto.nombre
+              .toLowerCase()
+              .includes(filtroCategoria.toLowerCase());
+
+          })
+
+          .forEach(producto => {
+
+            let div = document.createElement("div");
+
+            div.className = "producto";
+
+            div.innerHTML = `
+              <img src="${producto.imagen || tienda.imagen}">
+              <h3>${producto.nombre}</h3>
+              <p>${tienda.nombre}</p>
+              <p>${tienda.ubicacion}</p>
+              <p>Precio: S/ ${producto.precio}</p>
+
+              <input type="number" min="1" value="1">
+
+              <div class="btn">Solicitar pedido</div>
+            `;
+
+            let input = div.querySelector("input");
+            let btn = div.querySelector(".btn");
+
+            btn.onclick = (e) => {
+
+              e.stopPropagation();
+
+              let cant = parseInt(input.value);
+
+              let total = cant * producto.precio;
+
+              let msg =
+                `Hola, vengo de Centro de Lima Store, quiero pedir ${cant} ${producto.nombre} de la tienda ${tienda.nombre} por un total de S/ ${total}`;
+
+              let url =
+                "https://wa.me/51921516331?text=" +
+                encodeURIComponent(msg);
+
+              window.open(url, "_blank");
+            };
+
+            catalogo.appendChild(div);
+
+          });
+
       });
+
   });
+
 }
 
 /* ---------------- EVENTOS ---------------- */
