@@ -81,8 +81,7 @@ let galerias = [
           { nombre: "Adaptador Type C to USB-A", precio: 5, imagen: "ISUTECH/marketing.jpg" },
 	  { nombre: "Adaptador USB-A to Type-C", precio: 5, imagen: "ISUTECH/futbol.jpg" },
           { nombre: "Adaptador micro-USB to Type C", precio: 5.5, imagen: "ISUTECH/graduación.jpg" },
-	  { nombre: "Adaptador Card Reader + USBHUB", precio: 7, imagen: "ISUTECH/puerta.jpg" },
-          { nombre: "Adaptador SD Card to USB", precio: 25, imagen: "ISUTECH/colores.jpg" }
+	  { nombre: "Adaptador Card Reader + USBHUB", precio: 7, imagen: "ISUTECH/puerta.jpg" }
         ]
       },
       {
