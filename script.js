@@ -80,7 +80,9 @@ let galerias = [
 	  { nombre: "Adaptador USB a micro-USB", precio: 4.5, imagen: "ISUTECH/broma.jpg" },
           { nombre: "Adaptador Type C to USB-A", precio: 5, imagen: "ISUTECH/marketing.jpg" },
 	  { nombre: "Adaptador USB-A to Type-C", precio: 5, imagen: "ISUTECH/futbol.jpg" },
-          { nombre: "Adaptador micro-USB to Type C", precio: 5.5, imagen: "ISUTECH/graduación.jpg" }
+          { nombre: "Adaptador micro-USB to Type C", precio: 5.5, imagen: "ISUTECH/graduación.jpg" },
+	  { nombre: "Adaptador Card Reader + USBHUB", precio: 7, imagen: "ISUTECH/puerta.jpg" },
+          { nombre: "Adaptador SD Card to USB", precio: 25, imagen: "ISUTECH/colores.jpg" }
         ]
       },
       {
@@ -98,8 +100,40 @@ let galerias = [
         ubicacion: "Centro de Lima",
         imagen: "https://lh3.googleusercontent.com/d/1CW9qVToSXg4cVjLZaJoponjSoPmdsbyD",
         productos: [
-          { nombre: "Cargador iPhone", precio: 35 },
-          { nombre: "Audífonos Gamer", precio: 90 }
+          { nombre: "PARLANTE LIDIMI X-BASS", precio: 148, imagen: "MATHIAS/importar.jpg" },
+          { nombre: "PARLANTE LIDIMI EXTRA-BASS", precio: 148, imagen: "MATHIAS/rico.jpg" },
+	  { nombre: "PARLANTE LIDIMI BASS+ LDS007AC", precio: 80, imagen: "MATHIAS/bandana.jpg" },
+	  { nombre: "PARLANTE LIDIMI EXTRA-BASS (LD-S010AC/R)", precio: 80, imagen: "MATHIAS/carlos.jpg" },
+	  { nombre: "PARLANTE EWTTO EXTREME BASS", precio: 29, imagen: "MATHIAS/decir.jpg" },
+          { nombre: "PARLANTE WIRELESS SPEAKER GREAT BASS", precio: 64, imagen: "MATHIAS/excel.jpg" },
+	  { nombre: "PARLANTE EWTTO EW-P465BC", precio: 93, imagen: "MATHIAS/mother.jpg" },
+	  { nombre: "PARLANTE LIDIMI EXTRA-BASS LD-S639", precio: 113, imagen: "MATHIAS/flavia.jpg" },
+	  { nombre: "PARLANTE YUNTEL GREAT BASS", precio: 64, imagen: "MATHIAS/imaginando.jpg" },
+          { nombre: "PARLANTE LIDIMI X-BASS", precio: 204, imagen: "MATHIAS/colocar.jpg" },
+	  { nombre: "PARLANTE LIDIMI EUROPEAN TECH", precio: 224, imagen: "MATHIAS/economia.jpg" },
+	  { nombre: "PARLANTE LIDIMI BAJO-EXTRA", precio: 214, imagen: "MATHIAS/bronca.jpg" },
+	  { nombre: "PARLANTE SOUND JET HF-161", precio: 33, imagen: "MATHIAS/pasion.jpg" },
+          { nombre: "PARLANTE MAXTRON ZENITH", precio: 108, imagen: "MATHIAS/ati.jpg" },
+	  { nombre: "PARLANTE MAXTRON HERTZ MX-S200", precio: 108, imagen: "MATHIAS/misionero.jpg" },
+	  { nombre: "PARLANTE LIDIMI EXTRA-BASS LD-S060AC", precio: 238, imagen: "MATHIAS/juntas.jpg" },
+	  { nombre: "LIGHT & MUSIC K-036", precio: 29, imagen: "MATHIAS/mosquitos.jpg" },
+          { nombre: "PARLANTE EWTTO EXTREME BASS ET-P5710MB", precio: 83, imagen: "MATHIAS/cabeza.jpg" },
+	  { nombre: "PARLANTE DEXBO DE-P456MBC", precio: 88, imagen: "MATHIAS/iglesia.jpg" },
+	  { nombre: "PARLANTE EWTTO EXTREME BASS (ET-P5810MBC)", precio: 73, imagen: "MATHIAS/desayuno.jpg" },
+	  { nombre: "PARLANTE EWTTO EXTREME BASS (ET-P5115MB)", precio: 73, imagen: "MATHIAS/lloro.jpg" },
+          { nombre: "PARLANTE LIDIMI EXTRA-BASS (LD-S857)", precio: 50, imagen: "MATHIAS/ya.jpg" },
+	  { nombre: "PARLANTE YUNTEL (CHARGE6 LED)", precio: 49, imagen: "MATHIAS/lonjas.jpg" },
+	  { nombre: "PARLANTE EWTTO EXTREME BASS", precio: 64, imagen: "MATHIAS/quitar.jpg" },
+	  { nombre: "YUNTEL POWERFUL BOOMBOX", precio: 49, imagen: "MATHIAS/kim.jpg" },
+          { nombre: "PARLANTE EWTTO (ET-P1176BT)", precio: 59, imagen: "MATHIAS/aplastar.jpg" },
+	  { nombre: "PARLANTE YUNTEL XTREMEP192", precio: 49, imagen: "MATHIAS/presupuesto.jpg" },
+	  { nombre: "PARLANTE LIDIMI X-BASS (LD-S647)(IPX5)", precio: 74, imagen: "MATHIAS/parlante.jpg" },
+	  { nombre: "PARLANTE  EWTTO (EW-P102B)", precio: 64, imagen: "MATHIAS/tirsa.jpg" },
+          { nombre: "PARLANTE LIDIMI X-BASS (LD-S877)", precio: 69, imagen: "MATHIAS/moises.jpg" },
+	  { nombre: "PARLANTE EWTTO ET-P6538BR", precio: 34, imagen: "MATHIAS/ahorrar.jpg" },
+	  { nombre: "PARLANTE YUNTEL P PRO7", precio: 59, imagen: "MATHIAS/anos.jpg" },
+	  { nombre: "PARLANTE YUNTEL BOOMBOX 360 (IPX6)", precio: 64, imagen: "MATHIAS/bonito.jpg" },
+	  { nombre: "PARLANTE YUNTEL BOOMBOX 4MINI", precio: 54, imagen: "MATHIAS/provincia.jpg" }
         ]
       }
     ]
