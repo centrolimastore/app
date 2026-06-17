@@ -130,7 +130,6 @@ let galerias = [
 	  { nombre: "PARLANTE LIDIMI X-BASS (LD-S647)(IPX5)", precio: 74, imagen: "MATHIAS/parlante.jpg" },
           { nombre: "PARLANTE LIDIMI X-BASS (LD-S877)", precio: 69, imagen: "MATHIAS/moises.jpg" },
 	  { nombre: "PARLANTE EWTTO ET-P6538BR", precio: 34, imagen: "MATHIAS/ahorrar.jpg" },
-	  { nombre: "PARLANTE YUNTEL P PRO7", precio: 59, imagen: "MATHIAS/anos.jpg" },
 	  { nombre: "PARLANTE YUNTEL BOOMBOX 360 (IPX6)", precio: 64, imagen: "MATHIAS/bonito.jpg" },
 	  { nombre: "PARLANTE YUNTEL BOOMBOX 4MINI", precio: 54, imagen: "MATHIAS/provincia.jpg" }
         ]
