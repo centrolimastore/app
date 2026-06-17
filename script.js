@@ -128,7 +128,6 @@ let galerias = [
           { nombre: "PARLANTE EWTTO (ET-P1176BT)", precio: 59, imagen: "MATHIAS/aplastar.jpg" },
 	  { nombre: "PARLANTE YUNTEL XTREMEP192", precio: 49, imagen: "MATHIAS/presupuesto.jpg" },
 	  { nombre: "PARLANTE LIDIMI X-BASS (LD-S647)(IPX5)", precio: 74, imagen: "MATHIAS/parlante.jpg" },
-	  { nombre: "PARLANTE  EWTTO (EW-P102B)", precio: 64, imagen: "MATHIAS/tirsa.jpg" },
           { nombre: "PARLANTE LIDIMI X-BASS (LD-S877)", precio: 69, imagen: "MATHIAS/moises.jpg" },
 	  { nombre: "PARLANTE EWTTO ET-P6538BR", precio: 34, imagen: "MATHIAS/ahorrar.jpg" },
 	  { nombre: "PARLANTE YUNTEL P PRO7", precio: 59, imagen: "MATHIAS/anos.jpg" },
