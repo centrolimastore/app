@@ -199,7 +199,7 @@ let galerias = [
 	  { nombre: "Cargador DEXBO 70W 2 Entradas Tipo C-USB", precio: 19, imagen: "SURITEC/boludo.jpg" },
 	  { nombre: "Cargador DEXBO 120W Reales con pantalla", precio: 21, imagen: "SURITEC/sisi.jpg" },
 	  { nombre: "Cargador DEXBO 120W Doble Entrada Tipo C-USB", precio: 21, imagen: "SURITEC/keke.jpg" },
-	  { nombre: "Cargador EWTTO 120W", precio: 21, imagen: "SURITEC/sinamon.jpg },
+	  { nombre: "Cargador EWTTO 120W", precio: 21, imagen: "SURITEC/sinamon.jpg" },
 	  { nombre: "Cargador VEX 3.1A 2 USB Tipo V8 Micro USB", precio: 13, imagen: "SURITEC/cuidar.jpg" },
 	  { nombre: "Cargador ONCE 6A 67W Tipo C", precio: 13, imagen: "SURITEC/doggy.jpg" },
 	  { nombre: "Cargador ONCE 7A 80W Tipo C", precio: 15, imagen: "SURITEC/didier.jpg" },
