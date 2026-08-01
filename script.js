@@ -148,8 +148,15 @@ let galerias = [
         ubicacion: "Centro de Lima",
         imagen: "Logos/ECOTECNOLOGIA.jpeg",
         productos: [
-          { nombre: "Cargador", precio: 25 },
-          { nombre: "Audífonos", precio: 60 }
+          { nombre: "Mando Seisa", precio: 23, imagen: ECO/mandoseisa.jpg },
+          { nombre: "Mando Wireless Controller", precio: 47, imagen: ECO/melasuda.jpg },
+	  { nombre: "Mando Wireless Controller P4", precio: 55, imagen: ECO/marite.jpg },
+          { nombre: "Mando Wireless Controller N3P189", precio: 35, imagen: ECO/zigza.jpg },
+	  { nombre: "Mando inalámbrico para Android e IOS", precio: 31, imagen: ECO/manosalva.jpg },
+          { nombre: "Audífonos for PS4, PS5", precio: 39, imagen: ECO/libertad.jpg },
+	  { nombre: "USB HUB Seisa 2.0", precio: 13, imagen: ECO/salmon.jpg },
+          { nombre: "Mouse Seisa Ergonomic", precio: 8, imagen: ECO/piernas.jpg },
+	  { nombre: "USB Adaptador Seisa", precio: 13, imagen: ECO/anacardos.jpg }
         ]
       },
       {
@@ -189,7 +196,7 @@ let galerias = [
 	  { nombre: "Cargador REDD 8A Tipo C", precio: 17, imagen: "SURITEC/semis.jpg" },
 	  { nombre: "Cargador REDD 7.2A Tipo C", precio: 15, imagen: "SURITEC/human.jpg" },
 	  { nombre: "Cargador REDD 75W 2 entradas C", precio: 15, imagen: "SURITEC/somos.jpg" },
-	  { nombre: "Cargador ROMAX 6.2A Tipo C", precio: 15.5, imagen: "SURITEC/colorido.jpg" },
+	  { nombre: "Cargador ROMAX 6.2A Tipo C", precio: 15, imagen: "SURITEC/colorido.jpg" },
 	  { nombre: "Cargador ROMAX 6.2 Tipo IP 60W", precio: 18, imagen: "SURITEC/atr.jpg" },
 	  { nombre: "Cargador ROMAX 6.2A Tipo PD a C 80W", precio: 21, imagen: "SURITEC/kity.jpg" },
 	  { nombre: "Cargador DEXBO 6.5A Tipo C-USB", precio: 14, imagen: "SURITEC/willo.jpg" },
