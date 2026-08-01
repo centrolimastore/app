@@ -148,15 +148,15 @@ let galerias = [
         ubicacion: "Centro de Lima",
         imagen: "Logos/ECOTECNOLOGIA.jpeg",
         productos: [
-          { nombre: "Mando Seisa", precio: 23, imagen: ECO/mandoseisa.jpg },
-          { nombre: "Mando Wireless Controller", precio: 47, imagen: ECO/melasuda.jpg },
-	  { nombre: "Mando Wireless Controller P4", precio: 55, imagen: ECO/marite.jpg },
-          { nombre: "Mando Wireless Controller N3P189", precio: 35, imagen: ECO/zigza.jpg },
-	  { nombre: "Mando inalámbrico para Android e IOS", precio: 31, imagen: ECO/manosalva.jpg },
-          { nombre: "Audífonos for PS4, PS5", precio: 39, imagen: ECO/libertad.jpg },
-	  { nombre: "USB HUB Seisa 2.0", precio: 13, imagen: ECO/salmon.jpg },
-          { nombre: "Mouse Seisa Ergonomic", precio: 8, imagen: ECO/piernas.jpg },
-	  { nombre: "USB Adaptador Seisa", precio: 13, imagen: ECO/anacardos.jpg }
+          { nombre: "Mando Seisa", precio: 23, imagen: "ECO/mandoseisa.jpg" },
+          { nombre: "Mando Wireless Controller", precio: 47, imagen: "ECO/melasuda.jpg" },
+	  { nombre: "Mando Wireless Controller P4", precio: 55, imagen: "ECO/marite.jpg" },
+          { nombre: "Mando Wireless Controller N3P189", precio: 35, imagen: "ECO/zigza.jpg" },
+	  { nombre: "Mando inalámbrico para Android e IOS", precio: 31, imagen: "ECO/manosalva.jpg" },
+          { nombre: "Audífonos for PS4, PS5", precio: 39, imagen: "ECO/libertad.jpg" },
+	  { nombre: "USB HUB Seisa 2.0", precio: 13, imagen: "ECO/salmon.jpg" },
+          { nombre: "Mouse Seisa Ergonomic", precio: 8, imagen: "ECO/piernas.jpg" },
+	  { nombre: "USB Adaptador Seisa", precio: 13, imagen: "ECO/anacardos.jpg" }
         ]
       },
       {
