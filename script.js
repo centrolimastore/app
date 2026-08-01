@@ -155,7 +155,6 @@ let galerias = [
 	  { nombre: "Mando inalámbrico para Android e IOS", precio: 31, imagen: "ECO/manosalva.jpg" },
           { nombre: "Audífonos for PS4, PS5", precio: 39, imagen: "ECO/libertad.jpg" },
 	  { nombre: "USB HUB Seisa 2.0", precio: 13, imagen: "ECO/salmon.jpg" },
-          { nombre: "Mouse Seisa Ergonomic", precio: 8, imagen: "ECO/piernas.jpg" },
 	  { nombre: "USB Adaptador Seisa", precio: 13, imagen: "ECO/anacardos.jpg" }
         ]
       },
