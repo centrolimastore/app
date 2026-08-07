@@ -1,11 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
-  background: linear-gradient(
-    180deg,
-    #f8f9fb,
-    #eef2f6
-  );
+  background: #B9935A;
 }
 
 /* HERO */
@@ -40,9 +36,9 @@ body {
 .titulo {
   display: inline-block;
   color: white;
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 
   text-shadow:
     -2px -2px 0 black,
@@ -167,6 +163,7 @@ body {
 .categorias li:last-child {
   border-bottom: none;
 }
+
 .categorias li::before {
 
   content: "";
